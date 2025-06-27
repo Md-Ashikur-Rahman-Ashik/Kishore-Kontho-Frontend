@@ -37,8 +37,8 @@ export default function Carousel({ items }) {
             className="w-full h-48 object-cover"
           />
           <div className="p-4">
-            <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-            <p className="text-sm text-gray-700">{item.description}</p>
+            <h3 className="font-semibold text-center text-lg mb-2">{item.title}</h3>
+            <p className="text-sm text-center text-gray-700">{item.description}</p>
           </div>
         </div>
       ))}
