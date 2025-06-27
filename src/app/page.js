@@ -3,6 +3,7 @@ import Carousel from "@/components/Carousel";
 import SectionTitle from "@/components/SectionTitle";
 import PostList from "@/components/PostList";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default async function HomePage() {
   const [infoRes, postRes, carouselRes] = await Promise.all([
@@ -17,6 +18,7 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen">
+      <Navbar />
       <Marquee text={info?.marqueeText} />
       <SectionTitle title="Highlights" />
       <Carousel items={carousels?.data} />
