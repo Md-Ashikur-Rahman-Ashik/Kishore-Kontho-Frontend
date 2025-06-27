@@ -24,7 +24,7 @@ export default async function HomePage() {
       <Carousel items={carousels?.data} />
       <SectionTitle title="Latest Posts" />
       <PostList posts={postData?.data} />
-      <Footer info={info} />
+      <Footer />
     </main>
   );
 };
