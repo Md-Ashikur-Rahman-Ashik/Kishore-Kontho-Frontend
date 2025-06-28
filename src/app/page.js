@@ -15,12 +15,10 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
       <SectionTitle title="Highlights" />
       <Carousel items={carousels?.data} />
       <SectionTitle title="Latest Posts" />
       <PostList posts={postData?.data} />
-      <Footer />
     </main>
   );
 };
